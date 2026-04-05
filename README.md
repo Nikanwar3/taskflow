@@ -83,4 +83,4 @@ To add a new feature (e.g. task tags):
 4. Write tests covering invalid inputs and the happy path
 5. Update the React API client and add a tag selector to `TaskForm`
 
-The layered structure (models → schemas → routes) means each step is independent and testable in isolation.
+The layered structure (models → schemas → routes) means each step is independent and testable in isolation..
