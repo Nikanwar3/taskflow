@@ -72,7 +72,7 @@ The Vite dev server proxies `/tasks` and `/projects` to the Flask backend so the
 - **SQLite concurrency** — SQLite does not handle concurrent writes well. A production deployment would swap to PostgreSQL.
 - **No pagination** — `GET /tasks/` returns all tasks. This breaks at scale. Adding cursor-based pagination is a one-route change isolated to `routes/tasks.py`.
 - **Frontend has no edit form** — Tasks can be created and status-transitioned but not fully edited through the UI. The `PUT /tasks/:id` API supports full edits.
-- **Deleting a project does not delete its tasks** — Tasks become project-less. This is a deliberate choice to avoid accidental data loss; a cascade-delete option could be added with a query parameter.
+- **Deleting a project does not delete its tasks** — Tasks become project-less. This is a deliberate choice to avoid accidental data loss; a cascade-delete option could be added with a query parameters.
 
 ## Extension approach
 
