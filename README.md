@@ -1,6 +1,6 @@
 # TaskFlow
 
-A minimal task management system built with Python, Flask, React, and SQLite.
+A minimal task management system built with Python, Flask, React(frontend), and SQLite.
 
 ## Full-Stack
 
