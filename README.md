@@ -44,7 +44,7 @@ pytest tests/ -v
 
 ### Status transitions enforced at the model layer
 
-Tasks follow a defined lifecycle: `todo → in_progress → done`. Skipping directly from `todo` to `done` is disallowed. Transitions can go backwards (`done → in_progress`, `in_progress → todo`) to support reopening tasks.
+Tasks follow a defined lifecycle: `todo → in_progress → done`. Skipping directly from `todo` to `done` is disallowed. Transitions can go backwards (`done → in_progress`, `in_progress → todo`) to support the reopening tasks.
 
 This rule lives in `STATUS_TRANSITIONS` in `models/task.py` and is enforced by `Task.can_transition_to()`. The dedicated `PATCH /tasks/:id/status` endpoint applies this check before any write.
 
