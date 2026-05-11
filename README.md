@@ -6,7 +6,7 @@ A minimal task management system built with Python, Flask, React(frontend), and 
 
 - **Backend**: Python 3.11, Flask 3.0, SQLAlchemy, Marshmallow, pytest.
 - **Frontend**: React 18, Vite, Axios.
-- **Database**: SQLite (file-based, zero setup) lang.
+- **Database**: SQLite (file-based, zero setup) language.
 
 ## Running locally
 
